@@ -29,7 +29,7 @@ public class EVA_3_1_ORDENAMIENTOS {
         copia(arregloDatos, arregloSel);
         imprimir(arregloSel);
         ini = System.nanoTime();
-        selectionSort(arregloSel);
+        insertionSort(arregloSel);
         fin = System.nanoTime();
         imprimir(arregloSel);
         System.out.println("Insertion sort = " + (fin - ini));
@@ -101,4 +101,27 @@ public class EVA_3_1_ORDENAMIENTOS {
             arreglo[insP] = temp;
         }
     }
+    
+    //BUBBLE SORT NO LO VAMOS A PROGRAMAR
+    
+    //QUICKSORT PUBLICO
+    public static void quicksort(int[] arreglo){
+        quickSortRec(arreglo, 0, arreglo.length - 1);
+        
+    }
+    
+    public static void quickSortRec(int[] arreglo, int ini, int fin){
+        //pivote --> posición
+        //dos indices:
+        //ind_gran --> busca los mayores al pivote
+        //ind_peq --> busca los menores al pivote
+        //si se encuentran valores, se intercambian
+        //si se cruzan, se intercambia pivote con el ind_peq
+        //quicksort a cada lado del pivote
+        
+        
+}
+    
+    
+    
 }
