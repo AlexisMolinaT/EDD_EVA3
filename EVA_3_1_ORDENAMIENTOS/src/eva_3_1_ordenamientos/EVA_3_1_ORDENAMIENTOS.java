@@ -119,6 +119,9 @@ public class EVA_3_1_ORDENAMIENTOS {
         //si se cruzan, se intercambia pivote con el ind_peq
         //quicksort a cada lado del pivote
         
+        int pivot, ind_peq, ind_gran;
+        
+        
         
 }
     
