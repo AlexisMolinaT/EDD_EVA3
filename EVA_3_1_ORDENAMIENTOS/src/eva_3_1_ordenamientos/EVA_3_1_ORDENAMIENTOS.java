@@ -143,6 +143,7 @@ public class EVA_3_1_ORDENAMIENTOS {
         big = ini;
         small = fin;
         
+        if(ini < fin){
         while(big < small){ //los indices se cruzaron 
         //Mover el indices
         //buscar los elementos mas grandes que el pivote
@@ -167,12 +168,13 @@ public class EVA_3_1_ORDENAMIENTOS {
         arreglo[small] = temp;
         pivote = small;
         
-        //LLAMADA RECURSIVA 
-        quickSortRec(arreglo, ini, pivote - 1);
+        //LLAMADA RECURSIVA
+        
+        quickSortRec(arreglo, ini, pivote - 1);       
         quickSortRec(arreglo, pivote + 1, fin);
         
 }
     
-    
+    }
     
 }
