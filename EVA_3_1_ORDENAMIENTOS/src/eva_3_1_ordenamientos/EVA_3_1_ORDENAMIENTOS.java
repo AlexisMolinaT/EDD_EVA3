@@ -147,7 +147,7 @@ public class EVA_3_1_ORDENAMIENTOS {
         while(big < small){ //los indices se cruzaron 
         //Mover el indices
         //buscar los elementos mas grandes que el pivote
-        while(arreglo[big] <= arreglo[pivote]) 
+        while(arreglo[big] <= arreglo[pivote] && (big < small)) 
             big++;
         
         //buscar los elementos mas pequeños que el pivote
